@@ -1,0 +1,37 @@
+.sidebar {
+  transition: width 0.2s ease;
+}
+
+.collapsed {
+  width: 56px;
+}
+
+
+.SidebarButton.collapsed {
+  left: -20px;
+  bottom: 78px;
+  transform: rotate(180deg); /* Поворачиваем стрелку на 180 градусов при свернутом сайдбаре */
+
+}
+
+.ArrowIconWrapper:hover {
+  opacity: 0.7;
+}
+
+.SidebarLinkItem {
+  margin-top: 7px;
+  transition: opacity 0.2s ease;
+}
+
+.SidebarLinkItem.collapsed {
+  visibility: hidden;
+}
+
+.SwitcherBlock {
+  transition: opacity 0.2s ease /* Добавляем переход для opacity */
+}
+
+.SwitcherBlock.collapsed {
+  visibility: hidden;
+
+}
