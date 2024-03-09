@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import {ModeToggle} from "@/shared/ui/ModeToggle";
-import {Toggle} from "@/shared/ui/toggle";
-import {Avatar, AvatarFallback, AvatarImage} from "@/shared/ui/avatar";
+import { ModeToggle } from '@/shared/ui/ModeToggle';
+import { Toggle } from '@/shared/ui/toggle';
+import { Avatar, AvatarFallback, AvatarImage } from '@/shared/ui/avatar';
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -10,8 +10,8 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger
-} from "@/shared/ui/dropdown-menu";
-import {PizzaIcon} from "@/shared/assets/icons/PizzaIcon";
+} from '@/shared/ui/dropdown-menu';
+import { PizzaIcon } from '@/shared/assets/icons/PizzaIcon';
 
 
 export default function Home() {
