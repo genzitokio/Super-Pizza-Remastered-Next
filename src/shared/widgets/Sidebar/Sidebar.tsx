@@ -1,16 +1,21 @@
+'use client';
+
 import React, { useState } from 'react';
 import { PizzaIcon } from '@/shared/assets/icons/PizzaIcon';
 import { ModeToggle } from '@/shared/ui/ModeToggle';
-import { Toggle } from '@/shared/ui/toggle';
+import { LanguageSwitcher } from '@/shared/ui/LanguageSwitcher';
 import { ArrowIcon } from '@/shared/assets/icons/ArrowIcon';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
+
+
 import './Sidebar.scss';
 
 
 const Sidebar = () => {
 
     const [collapsed, setCollapsed] = useState(false);
-    const { t } = useTranslation();
+    const t = useTranslations();
+
 
 
     const onToggle = () => {
@@ -33,19 +38,19 @@ const Sidebar = () => {
                     <div
                         className={`SidebarLinkItem ${collapsed ? 'collapsed' : ''}`}
                     >
-                        Главная
+                        {t('Главная')}
                     </div>
                     <div
                         className={`SidebarLinkItem ${collapsed ? 'collapsed' : ''}`}
 
                     >
-                        О сайте
+                        {t('О сайте')}
                     </div>
                     <div
                         className={`SidebarLinkItem ${collapsed ? 'collapsed' : ''}`}
 
                     >
-                        Каталог
+                        {t('Каталог')}
                     </div>
                 </div>
             </div>
@@ -68,8 +73,8 @@ const Sidebar = () => {
                 <div className='flex gap-2 items-center'>
                     <ModeToggle />
 
-                    <Toggle variant={'outline'}
-                    >EN</Toggle>
+                    <LanguageSwitcher variant={'outline'}
+                    >EN</LanguageSwitcher>
 
                 </div>
             </div>
