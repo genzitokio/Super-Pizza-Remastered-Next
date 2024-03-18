@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
-
-import Navbar from '@/shared/widgets/Navbar/Navbar';
-import Sidebar from '@/shared/widgets/Sidebar/Sidebar';
+import Sidebar from '@/widgets/Sidebar/Sidebar';
+import Navbar from '@/widgets/Navbar/Navbar';
+import { useDispatch } from 'react-redux';
 
 export default function Home() {
     const t = useTranslations();
