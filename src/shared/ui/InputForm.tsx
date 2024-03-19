@@ -1,8 +1,8 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { Input } from '@/shared/ui/input';
-import { toast } from '@/shared/ui/use-toast';
+import { Input } from '@/shared/ui/shadcn/input';
+import { toast } from '@/shared/ui/shadcn/use-toast';
 import {
     Form,
     FormControl,
@@ -11,8 +11,8 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from '@/shared/ui/form';
-import { Button } from '@/shared/ui/button';
+} from '@/shared/ui/shadcn/form';
+import { Button } from '@/shared/ui/shadcn/button';
 
 const FormSchema = z.object({
     username: z.string().min(2, {

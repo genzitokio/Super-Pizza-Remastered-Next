@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { PizzaIcon } from '@/shared/assets/icons/PizzaIcon';
-import { ModeToggle } from '@/shared/ui/ModeToggle';
-import { LanguageSwitcher } from '@/shared/ui/LanguageSwitcher';
+import { ModeToggle } from '@/shared/ui/shadcn/ModeToggle';
+import { Toggle } from '@/shared/ui/shadcn/toggle';
 import { ArrowIcon } from '@/shared/assets/icons/ArrowIcon';
 import { useTranslations } from 'next-intl';
 
@@ -73,8 +73,8 @@ const Sidebar = () => {
                 <div className='flex gap-2 items-center'>
                     <ModeToggle />
 
-                    <LanguageSwitcher variant={'outline'}
-                    >EN</LanguageSwitcher>
+                    <Toggle variant={'outline'}
+                    >EN</Toggle>
 
                 </div>
             </div>

@@ -1,17 +1,16 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from '@/shared/ui/dropdown-menu';
-import { Avatar, AvatarFallback, AvatarImage } from '@/shared/ui/avatar';
+
 import { useTranslations } from 'next-intl';
 import { LoginModal } from "@/shared/ui/LoginModal";
+import {
+    DropdownMenu,
+    DropdownMenuContent, DropdownMenuItem,
+    DropdownMenuLabel, DropdownMenuSeparator,
+    DropdownMenuTrigger
+} from "@/shared/ui/shadcn/dropdown-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/shared/ui/shadcn/avatar";
 
 const Navbar = () => {
     const [domLoaded, setDomLoaded] = useState(false);
@@ -33,6 +32,7 @@ const Navbar = () => {
                         </Avatar>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
+                        {/* eslint-disable-next-line react/jsx-no-undef */}
                         <DropdownMenuLabel>{t('Мой профиль')}</DropdownMenuLabel>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>{t('Профиль')}</DropdownMenuItem>

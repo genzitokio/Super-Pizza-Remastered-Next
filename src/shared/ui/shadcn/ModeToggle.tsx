@@ -3,8 +3,9 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
-import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/shared/ui/dropdown-menu";
-import {Button} from "@/shared/ui/button";
+import { Button } from '@/shared/ui/shadcn/button';
+import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem } from "@/shared/ui/shadcn/dropdown-menu";
 
 
 

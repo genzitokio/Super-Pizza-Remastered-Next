@@ -6,8 +6,8 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from '@/shared/ui/alert-dialog';
-import { Button } from '@/shared/ui/button';
+} from '@/shared/ui/shadcn/alert-dialog';
+import { Button } from '@/shared/ui/shadcn/button';
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { InputForm } from "@/shared/ui/InputForm";

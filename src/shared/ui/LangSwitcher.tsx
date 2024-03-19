@@ -3,7 +3,7 @@
 import React, { ChangeEvent, useTransition } from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { LanguageSwitcher } from '@/shared/ui/LanguageSwitcher';
+import { Toggle } from '@/shared/ui/shadcn/toggle';
 
 const LangSwitcher = () => {
     const [isPending, startTransition] = useTransition();
@@ -20,7 +20,7 @@ const LangSwitcher = () => {
 
     return (
         <>
-            <LanguageSwitcher variant={'outline'}>EN</LanguageSwitcher>
+            <Toggle variant={'outline'}>EN</Toggle>
 
 
             <label className='border-2 rounded'>
